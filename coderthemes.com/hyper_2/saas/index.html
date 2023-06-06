@@ -1,0 +1,1702 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    
+<!-- Mirrored from coderthemes.com/hyper_2/saas/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Dec 2021 14:40:28 GMT -->
+<head>
+        <meta charset="utf-8" />
+        <title>Sistema Indatec</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Indafire Equipamentos de Combate a Incendios" name="description" />
+        <meta content="Indafire" name="Franco V. Morales" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/logoMenor.png">
+
+        <!-- third party css -->
+        <link href="assets/css/vendor/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+        <!-- third party css end -->
+
+        <!-- App css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
+        <link href="assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
+        <script type="text/javascript">
+            
+        </script>
+<style type="text/css">
+  <style>
+   
+  </style>
+</style>
+    </head>
+
+    <body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
+        <!-- Begin page -->
+        <div class="wrapper">
+            <!-- ========== INICIO DE BARRA LATERAL ESQUERDA ========== -->
+            <div class="leftside-menu">
+    
+                <!-- LOGO -->
+                <a href="#" class="logo text-center logo-light">
+                    <span class="logo-lg">
+                        <img src="assets/images/logo-indafire.jpg" alt="" height="16">
+                    </span>
+                    <span class="logo-sm">
+                        <img src="assets/images/logo_sm.png" alt="" height="16">
+                    </span>
+                </a>
+
+                <!-- LOGO -->
+                <a href="index.html" class="logo text-center logo-dark">
+                    <span class="logo-lg">
+                        <img src="assets/images/logo-dark.png" alt="" height="16">
+                    </span>
+                    <span class="logo-sm">
+                        <img src="assets/images/logo_sm_dark.png" alt="" height="16">
+                    </span>
+                </a>
+    
+                <div class="h-100" id="leftside-menu-container" data-simplebar>
+
+                    <!--- MENU LATERAL -->
+                    <ul class="side-nav">
+
+                        <li class="side-nav-title side-nav-item">Navegação</li>
+                        <!-- ### VARIÁVEIS OCULTAS DO SISTEMA   ### -->
+                        <input type="hidden" name="codigo" id="codigo" value="<?php print $codigo ?>"><!-- ## VARIAVEL OCULTA PARA CARREGAR O CÓDIGO/ID DO CLIENTE ## -->
+                        <input type="hidden" name="nome" id="nome" value="<?php print $nome ?>"><!-- ## VARIÁVEL OCULTA PARA CARREGAR O NOME DO CLIENTE ## -->
+                        <!-- ###  VARIÁVEIS OCULTAS DO SISTEMA  ### -->
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarDashboards" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link">
+                                <i class="uil-home-alt"></i>
+                                <span class="badge bg-success float-end">4</span>
+                                <span> Painel de Controle </span>
+                            </a>
+                            <div class="collapse" id="sidebarDashboards">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="#">Analitico</a><!-- dashboard-analytics.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">CRM</a><!-- dashboard-crm.html  -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Ecommerce</a><!-- index.html  -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Projetos</a><!-- dashboard-projects.html  -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-title side-nav-item">Apps</li>
+
+                        <li class="side-nav-item">
+                            <a href="#" class="side-nav-link"><!-- apps-calendar.html -->
+                                <i class="uil-calender"></i>
+                                <span> Calendário </span>
+                            </a>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a href="#" class="side-nav-link"><!-- apps-chat.html  -->
+                                <i class="uil-comments-alt"></i>
+                                <span> Chat </span>
+                            </a>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarEcommerce" aria-expanded="false" aria-controls="sidebarEcommerce" class="side-nav-link">
+                                <i class="uil-store"></i>
+                                <span> Ecommerce </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarEcommerce">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="#">Produtos</a><!-- apps-ecommerce-products.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Detalhes Produtos</a><!-- apps-ecommerce-products-details.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Pedidos</a><!-- apps-ecommerce-orders.html  -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Detalhes Pedido</a><!-- apps-ecommerce-orders-details.html  -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Clientes</a><!-- apps-ecommerce-customers.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Compras</a><!-- apps-ecommerce-shopping-cart.html  -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Verificação</a><!-- apps-ecommerce-checkout.html  -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Vendedores</a><!-- apps-ecommerce-sellers.html  -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarEmail" aria-expanded="false" aria-controls="sidebarEmail" class="side-nav-link">
+                                <i class="uil-envelope"></i>
+                                <span> Email </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarEmail">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="#">Inbox</a><!-- apps-email-inbox.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Ler Email</a><!-- apps-email-read.html -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarProjects" aria-expanded="false" aria-controls="sidebarProjects" class="side-nav-link">
+                                <i class="uil-briefcase"></i>
+                                <span> Projetos </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarProjects">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="#">Lista</a><!-- apps-projects-list.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Detalhes</a><!-- apps-projects-details.html  -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Gantt <span class="badge rounded-pill badge-light-lighten font-10 float-end">Novo</span></a><!-- apps-projects-gantt.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Projetos Criados <span class="badge rounded-pill badge-success-lighten font-10 float-end">Novo</span></a><!-- apps-projects-add.html -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a href="#" class="side-nav-link"><!-- apps-social-feed.html -->
+                                <i class="uil-rss"></i>
+                                <span> Feed Notícias </span>
+                            </a>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarTasks" aria-expanded="false" aria-controls="sidebarTasks" class="side-nav-link">
+                                <i class="uil-clipboard-alt"></i>
+                                <span> Tarefas </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarTasks">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="#">Lista</a><!-- apps-tasks.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Detalhes</a><!--  apps-tasks-details.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Kanban Board</a><!-- apps-kanban.html -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a href="#" class="side-nav-link"><!-- apps-file-manager.html  -->
+                                <i class="uil-folder-plus"></i>
+                                <span> Gerenciador Arquivos </span>
+                            </a>
+                        </li>
+
+                        <li class="side-nav-title side-nav-item">Clientes</li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarPages" aria-expanded="false" aria-controls="sidebarPages" class="side-nav-link">
+                                <i class="uil-copy-alt"></i>
+                                <span> Páginas </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarPages">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="#">Perfil</a><!-- pages-profile.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Perfil 2</a><!-- pages-profile-2.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Nota Fiscal</a><!-- pages-invoice.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">FAQ</a><!-- pages-faq.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Preços</a><!-- pages-pricing.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Manutenção</a><!-- pages-maintenance.html -->
+                                    </li>
+                                    <li class="side-nav-item">
+                                        <a data-bs-toggle="collapse" href="#sidebarPagesAuth" aria-expanded="false" aria-controls="sidebarPagesAuth">
+                                            <span> Autenticação </span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="sidebarPagesAuth">
+                                            <ul class="side-nav-third-level">
+                                                <li>
+                                                    <a href="#">Login</a> <!-- pages-login.html  -->
+                                                </li>
+                                                <li>
+                                                    <a href="#">Login 2</a> <!-- pages-login-2.html -->
+                                                </li>
+                                                <li>
+                                                    <a href="#">Registro</a> <!-- pages-register.html  -->
+                                                </li>
+                                                <li>
+                                                    <a href="#">Registro 2</a> <!-- pages-register-2.html -->
+                                                </li>
+                                                <li>
+                                                    <a href="#">Logout</a><!-- pages-logout.html -->
+                                                </li>
+                                                <li>
+                                                    <a href="#">Logout 2</a><!-- pages-logout-2.html -->
+                                                </li>
+                                                <li>
+                                                    <a href="#">Redfinir Senha</a><!--   -->
+                                                </li>
+                                                <li>
+                                                    <a href="#">Redefinir Senha 2</a><!-- pages-recoverpw-2.html -->
+                                                </li>
+                                                <li>
+                                                    <a href="#">Segurança Tela</a><!-- pages-lock-screen.html -->
+                                                </li>
+                                                <li>
+                                                    <a href="#">Segurança Tela 2</a><!-- pages-lock-screen.html -->
+                                                </li>
+                                                <li>
+                                                    <a href="#">Confirmar Emaill</a><!-- pages-confirm-mail.html -->
+                                                </li>
+                                                <li>
+                                                    <a href="#">Confirmar Email 2</a><!-- pages-confirm-mail-2.html -->
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="side-nav-item">
+                                        <a data-bs-toggle="collapse" href="#sidebarPagesError" aria-expanded="false" aria-controls="sidebarPagesError">
+                                            <span> Erro </span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="sidebarPagesError">
+                                            <ul class="side-nav-third-level">
+                                                <li>
+                                                <a href="#">Erro 404</a><!-- pages-404.html  -->
+                                            </li>
+                                            <li>
+                                                <a href="#">Erro 404-alt</a><!-- pages-404-alt.html -->
+                                            </li>
+                                            <li>
+                                                <a href="#">Erro 500</a><!-- pages-500.html -->
+                                            </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">Iniciar Página</a><!-- pages-starter.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Pré Carregamento</a><!-- pages-preloader.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Linha do Tempo</a><!-- pages-timeline.html  -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a href="#" target="_blank" class="side-nav-link"><!-- landing.html -->
+                                <i class="uil-globe"></i>
+                                <span class="badge bg-secondary text-light float-end">Novo</span>
+                                <span> Landing </span>
+                            </a>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarLayouts" aria-expanded="false" aria-controls="sidebarLayouts" class="side-nav-link">
+                                <i class="uil-window"></i>
+                                <span> Layouts </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarLayouts">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="#">Horizontal</a><!-- layouts-horizontal.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Anexos</a><!-- layouts-detached.html  -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Cheio</a><!-- layouts-full.html -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+            
+                        <li class="side-nav-title side-nav-item mt-1">Componentes</li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarBaseUI" aria-expanded="false" aria-controls="sidebarBaseUI" class="side-nav-link">
+                                <i class="uil-box"></i>
+                                <span> Base UI </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarBaseUI">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="#">Accordions</a><!-- ui-accordions.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Alertas</a><!-- ui-alerts.html  -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Avatars</a><!-- ui-avatars.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Badges</a><!-- ui-badges.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Breadcrumb</a><!-- ui-breadcrumb.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Botões</a><!-- ui-buttons.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Cartões</a><!-- ui-cards.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Carrossel</a><!-- ui-carousel.html  -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Dropdowns</a><!--  ui-dropdowns.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Video</a><!-- ui-embed-video.html  -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Grid</a><!-- ui-grid.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Lista Grupo</a><!--  ui-list-group.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Modals</a><!--  ui-modals.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Notificações</a><!-- ui-notifications.html  -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Offcanvas</a><!-- ui-offcanvas.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Placeholders</a><!-- ui-placeholders.html  -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Paginas</a><!-- ui-pagination.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Popovers</a><!-- ui-popovers.html  -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Progresso</a><!-- ui-progress.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Ribbons</a><!-- ui-ribbons.html  -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Spinners</a><!-- ui-spinners.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Tabs</a><!-- ui-tabs.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Tooltips</a><!-- ui-tooltips.html  -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Typography</a><!-- ui-typography.html -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarExtendedUI" aria-expanded="false" aria-controls="sidebarExtendedUI" class="side-nav-link">
+                                <i class="uil-package"></i>
+                                <span> Extensão UI </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarExtendedUI">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="#">Dragula</a><!-- extended-dragula.html  -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Range Slider</a><!--  extended-range-slider.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Ratings</a><!-- extended-ratings.html  -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Scrollbar</a><!-- extended-scrollbar.html  -->
+                                    </li>
+                                    <li>
+                                        <a href="">Scrollspy</a><!--  extended-scrollspy.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Treeview</a><!--  extended-treeview.html -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a href="widgets.html" class="side-nav-link">
+                                <i class="uil-layer-group"></i>
+                                <span> Widgets </span>
+                            </a>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarIcons" aria-expanded="false" aria-controls="sidebarIcons" class="side-nav-link">
+                                <i class="uil-streering"></i>
+                                <span> Icones </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarIcons">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="#">Dripicons</a><!-- icons-dripicons.html  -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Design</a><!-- icons-mdi.html  -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Unicons</a><!-- icons-unicons.html  -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarForms" aria-expanded="false" aria-controls="sidebarForms" class="side-nav-link">
+                                <i class="uil-document-layout-center"></i>
+                                <span> Cadastros </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarForms">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="cadastros/form-elements.php">Clientes</a><!-- form-elements.html  -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Formulário Avançados</a><!-- form-advanced.html  -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Validação</a><!-- form-validation.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Wizard</a><!-- form-wizard.html  -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Arquivos Carregados</a><!-- form-fileuploads.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Editores</a><!-- form-editors.html -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarCharts" aria-expanded="false" aria-controls="sidebarCharts" class="side-nav-link">
+                                <i class="uil-chart"></i>
+                                <span> Carrinhos </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarCharts">
+                                <ul class="side-nav-second-level">
+                                    <li class="side-nav-item">
+                                        <a data-bs-toggle="collapse" href="#sidebarApexCharts" aria-expanded="false" aria-controls="sidebarApexCharts">
+                                            <span> Carrinhos Apex </span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="sidebarApexCharts">
+                                            <ul class="side-nav-third-level">
+                                                <li>
+                                                    <a href="#">Area</a><!-- charts-apex-area.html  -->
+                                                </li>
+                                                <li>
+                                                    <a href="#">Barra</a><!-- charts-apex-bar.html  -->
+                                                </li>
+                                                <li>
+                                                    <a href="#">Bubble</a><!-- charts-apex-bubble.html -->
+                                                </li>
+                                                <li>
+                                                    <a href="#">Candlestick</a><!-- charts-apex-candlestick.html  -->
+                                                </li>
+                                                <li>
+                                                    <a href="#">Coluna</a><!-- charts-apex-column.html -->
+                                                </li>
+                                                <li>
+                                                    <a href="#">Mapa</a><!-- charts-apex-heatmap.html  -->
+                                                </li>
+                                                <li>
+                                                    <a href="#">Linha</a><!--  charts-apex-line.html -->
+                                                </li>
+                                                <li>
+                                                    <a href="#">Mixed</a><!-- charts-apex-mixed.html  -->
+                                                </li>
+                                                <li>
+                                                    <a href="#">Pie</a><!-- charts-apex-pie.html -->
+                                                </li>
+                                                <li>
+                                                    <a href="#">Radar</a><!-- charts-apex-radar.html  -->
+                                                </li>
+                                                <li>
+                                                    <a href="#">RadialBar</a><!--  charts-apex-radialbar.html -->
+                                                </li>
+                                                <li>
+                                                    <a href="#">Scatter</a><!--  charts-apex-scatter.html -->
+                                                </li>
+                                                <li>
+                                                    <a href="#">Sparklines</a><!-- charts-apex-sparklines.html -->
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">Britecharts</a><!--  charts-brite.html -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Chartjs</a><!-- charts-chartjs.html  -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Sparklines</a><!-- charts-sparkline.html  -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarTables" aria-expanded="false" aria-controls="sidebarTables" class="side-nav-link">
+                                <i class="uil-table"></i>
+                                <span> Tabelas </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarTables">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="#">Tabelas Basicas</a><!-- tables-basic.html  -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Tabela de Dados</a><!-- tables-datatable.html  -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarMaps" aria-expanded="false" aria-controls="sidebarMaps" class="side-nav-link">
+                                <i class="uil-location-point"></i>
+                                <span> Mapas </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarMaps">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="#">Google Maps</a><!--maps-google.html  -->
+                                    </li>
+                                    <li>
+                                        <a href="#">Vetor Maps</a><!-- maps-vector.html  -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarMultiLevel" aria-expanded="false" aria-controls="sidebarMultiLevel" class="side-nav-link">
+                                <i class="uil-folder-plus"></i>
+                                <span> Multi Nivel </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarMultiLevel">
+                                <ul class="side-nav-second-level">
+                                    <li class="side-nav-item">
+                                        <a data-bs-toggle="collapse" href="#sidebarSecondLevel" aria-expanded="false" aria-controls="sidebarSecondLevel">
+                                            <span> Segundo Nivel </span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="sidebarSecondLevel">
+                                            <ul class="side-nav-third-level">
+                                                <li>
+                                                    <a href="javascript: void(0);">Item 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript: void(0);">Item 2</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="side-nav-item">
+                                        <a data-bs-toggle="collapse" href="#sidebarThirdLevel" aria-expanded="false" aria-controls="sidebarThirdLevel">
+                                            <span> Terceiro Nivel </span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="sidebarThirdLevel">
+                                            <ul class="side-nav-third-level">
+                                                <li>
+                                                    <a href="javascript: void(0);">Item 1</a>
+                                                </li>
+                                                <li class="side-nav-item">
+                                                    <a data-bs-toggle="collapse" href="#sidebarFourthLevel" aria-expanded="false" aria-controls="sidebarFourthLevel">
+                                                        <span> Item 2 </span>
+                                                        <span class="menu-arrow"></span>
+                                                    </a>
+                                                    <div class="collapse" id="sidebarFourthLevel">
+                                                        <ul class="side-nav-forth-level">
+                                                            <li>
+                                                                <a href="javascript: void(0);">Item 2.1</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript: void(0);">Item 2.2</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- Help Box -->
+                    <div class="help-box text-white text-center">
+                        <a href="javascript: void(0);" class="float-end close-btn text-white">
+                            <i class="mdi mdi-close"></i>
+                        </a>
+                        <img src="assets/images/help-icon.svg" height="90" alt="Helper Icon Image" />
+                        <h5 class="mt-3">Acesso Ilimitado</h5>
+                        <p class="mb-3">Atualizar acesso</p>
+                        <a href="javascript: void(0);" class="btn btn-outline-light btn-sm">Atuaizar</a>
+                    </div>
+                    <!-- end Help Box -->
+                    <!-- End Sidebar -->
+
+                    <div class="clearfix"></div>
+
+                </div>
+                <!-- Sidebar -left -->
+
+            </div>
+            <!-- Left Sidebar End -->
+
+            <!-- ============================================================== -->
+            <!-- INICIA O CONTEÚDO DA PÁGINA AQUI                               -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+               <div class="content"> 
+<!--  ##############################################################################################################################################################################################  -->
+                                                <!-- ATENÇÃO - ATENÇÃO - AQUI COMEÇA O MODAL PARA MENSAGEM DE SAIR DO SISTEMA ##### -->
+                                                <!-- LAERTA MODAL DE AVISO -->
+                                                <div id="warning-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                                                    <div class="modal-dialog modal-sm">
+                                                        <div class="modal-content">
+                                                            <div class="modal-body p-4">
+                                                                <div class="text-center">
+                                                                    <i class="dripicons-warning h1 text-warning"></i>
+                                                                    <h4 class="mt-2">Deseja sair do sistema?</h4>
+                                                                    
+                                                                    <button type="button" class="btn btn-warning my-2" data-bs-dismiss="modal" onclick="sim_sair()">Sim</button>
+                                                                    <button type="button" class="btn btn-warning my-2" data-bs-dismiss="modal">Não</button>
+                                                                </div>
+                                                            </div>
+                                                        </div><!-- /.modal-content -->
+                                                    </div><!-- /.modal-dialog -->
+                                                </div><!-- /.modal -->
+<!--  ##############################################################################################################################################################################################  -->
+
+
+                    <!-- INICIO DA BARRA DO TOPO DA PÁGINA -->
+                    <div class="navbar-custom">
+                        <ul class="list-unstyled topbar-menu float-end mb-0">
+                            <li class="dropdown notification-list d-lg-none">
+                                <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    <i class="dripicons-search noti-icon"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-animated dropdown-lg p-0">
+                                    <form class="p-3">
+                                        <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                                    </form>
+                                </div>
+                            </li>
+                            
+                            <li class="dropdown notification-list">
+                                <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    <i class="dripicons-bell noti-icon"></i>
+                                    <span class="noti-icon-badge"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated dropdown-lg">
+
+                                    <!-- item-->
+                                    <div class="dropdown-item noti-title">
+                                        <h5 class="m-0">
+                                            <span class="float-end">
+                                                <a href="javascript: void(0);" class="text-dark">
+                                                    <small>Limpar Tudo</small>
+                                                </a>
+                                            </span>Notificação
+                                        </h5>
+                                    </div>
+
+                                    <div style="max-height: 230px;" data-simplebar>
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                            <div class="notify-icon bg-primary">
+                                                <i class="mdi mdi-comment-account-outline"></i>
+                                            </div>
+                                            <p class="notify-details">Caleb Flakelar commented on Admin
+                                                <small class="text-muted">1 min ago</small>
+                                            </p>
+                                        </a>
+
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                            <div class="notify-icon bg-info">
+                                                <i class="mdi mdi-account-plus"></i>
+                                            </div>
+                                            <p class="notify-details">New user registered.
+                                                <small class="text-muted">5 hours ago</small>
+                                            </p>
+                                        </a>
+
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                            <div class="notify-icon">
+                                                <img src="assets/images/users/avatar-2.jpg" class="img-fluid rounded-circle" alt="" /> </div>
+                                            <p class="notify-details">Cristina Pride</p>
+                                            <p class="text-muted mb-0 user-msg">
+                                                <small>Hi, How are you? What about our next meeting</small>
+                                            </p>
+                                        </a>
+
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                            <div class="notify-icon bg-primary">
+                                                <i class="mdi mdi-comment-account-outline"></i>
+                                            </div>
+                                            <p class="notify-details">Caleb Flakelar commented on Admin
+                                                <small class="text-muted">4 days ago</small>
+                                            </p>
+                                        </a>
+
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                            <div class="notify-icon">
+                                                <img src="assets/images/users/avatar-4.jpg" class="img-fluid rounded-circle" alt="" /> </div>
+                                            <p class="notify-details">Karen Robinson</p>
+                                            <p class="text-muted mb-0 user-msg">
+                                                <small>Wow ! this admin looks good and awesome design</small>
+                                            </p>
+                                        </a>
+
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                            <div class="notify-icon bg-info">
+                                                <i class="mdi mdi-heart"></i>
+                                            </div>
+                                            <p class="notify-details">Carlos Crouch liked
+                                                <b>Admin</b>
+                                                <small class="text-muted">13 days ago</small>
+                                            </p>
+                                        </a>
+                                    </div>
+
+                                    <!-- All-->
+                                    <a href="javascript:void(0);" class="dropdown-item text-center text-primary notify-item notify-all">
+                                        Ver Tudo
+                                    </a>
+
+                                </div>
+                            </li>
+
+                            <li class="dropdown notification-list d-none d-sm-inline-block">
+                                <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    <i class="dripicons-view-apps noti-icon"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated dropdown-lg p-0">
+
+                                    <div class="p-2">
+                                        <div class="row g-0">
+                                            <div class="col">
+                                                <a class="dropdown-icon-item" href="#">
+                                                    <img src="assets/images/brands/slack.png" alt="slack">
+                                                    <span>Slack</span>
+                                                </a>
+                                            </div>
+                                            <div class="col">
+                                                <a class="dropdown-icon-item" href="#">
+                                                    <img src="assets/images/brands/github.png" alt="Github">
+                                                    <span>GitHub</span>
+                                                </a>
+                                            </div>
+                                            <div class="col">
+                                                <a class="dropdown-icon-item" href="#">
+                                                    <img src="assets/images/brands/dribbble.png" alt="dribbble">
+                                                    <span>Dribbble</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="row g-0">
+                                            <div class="col">
+                                                <a class="dropdown-icon-item" href="#">
+                                                    <img src="assets/images/brands/bitbucket.png" alt="bitbucket">
+                                                    <span>Bitbucket</span>
+                                                </a>
+                                            </div>
+                                            <div class="col">
+                                                <a class="dropdown-icon-item" href="#">
+                                                    <img src="assets/images/brands/dropbox.png" alt="dropbox">
+                                                    <span>Dropbox</span>
+                                                </a>
+                                            </div>
+                                            <div class="col">
+                                                <a class="dropdown-icon-item" href="#">
+                                                    <img src="assets/images/brands/g-suite.png" alt="G Suite">
+                                                    <span>G Suite</span>
+                                                </a>
+                                            </div>
+                                        </div> <!-- FINAL DE LINHA -->
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <li class="notification-list">
+                                <a class="nav-link end-bar-toggle" href="javascript: void(0);">
+                                    <i class="dripicons-gear noti-icon"></i>
+                                </a>
+                            </li>
+
+                            <li class="dropdown notification-list">
+                                <a class="nav-link dropdown-toggle nav-user arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                                    aria-expanded="false">
+                                    <span class="account-user-avatar"> 
+                                        <img src="assets/images/users/avatar-1.jpg" alt="user-image" class="rounded-circle">
+                                    </span>
+                                    <span>
+                                        <span class="account-user-name"><?php print $nome; ?></span>
+                                        <span class="account-position"><?php print $cargo; ?></span>
+                                    </span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
+                                    <!-- item-->
+                                    <div class=" dropdown-header noti-title">
+                                        <h6 class="text-overflow m-0">Seja Bem vindo !</h6>
+                                    </div>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="mdi mdi-account-circle me-1"></i>
+                                        <span>Minha Conta</span>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="mdi mdi-account-edit me-1"></i>
+                                        <span>Configurações</span>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="mdi mdi-lifebuoy me-1"></i>
+                                        <span>Suporte</span>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="mdi mdi-lock-outline me-1"></i>
+                                        <span>Segurança Tela</span>
+                                    </a>
+
+                                    <!-- item-->
+
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item"><!--  -->
+                                        <i class="mdi mdi-logout me-1"></i>
+                                       
+                                        <span onclick="deslogar()">Deslogar</span>
+                                     </a>
+                                </div>
+                            </li>
+                        </ul>
+
+                       <button class="button-menu-mobile open-left">
+                            <i class="mdi mdi-menu"></i>
+                        </button>
+                        <div class="app-search dropdown d-none d-lg-block">
+                            <form>
+                                <div class="input-group">
+                                    <input type="text" class="form-control dropdown-toggle"  placeholder="Digitar aqui..." id="top-search">
+                                    <span class="mdi mdi-magnify search-icon"></span>
+                                    <button class="input-group-text btn-primary" type="submit">Buscar</button>
+                                </div>
+                            </form>
+
+                            <div class="dropdown-menu dropdown-menu-animated dropdown-lg" id="search-dropdown">
+                                <!-- item-->
+                                <div class="dropdown-header noti-title">
+                                    <h5 class="text-overflow mb-2">Encontrar <span class="text-danger">17</span> resultados</h5>
+                                </div>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="uil-notes font-16 me-1"></i>
+                                    <span>Relatório Analitico</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="uil-life-ring font-16 me-1"></i>
+                                    <span>Como posso ajudar?</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="uil-cog font-16 me-1"></i>
+                                    <span>Configuração Perfil de Usuário</span>
+                                </a>
+
+                                <!-- item-->
+                                <div class="dropdown-header noti-title">
+                                    <h6 class="text-overflow mb-2 text-uppercase">Usuários</h6>
+                                </div>
+
+                                <div class="notification-list">
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="d-flex">
+                                            <img class="d-flex me-2 rounded-circle" src="assets/images/users/avatar-2.jpg" alt="Generic placeholder image" height="32">
+                                            <div class="w-100">
+                                                <h5 class="m-0 font-14">Erwin Brown</h5>
+                                                <span class="font-12 mb-0">UI Designer</span>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="d-flex">
+                                            <img class="d-flex me-2 rounded-circle" src="assets/images/users/avatar-5.jpg" alt="Generic placeholder image" height="32">
+                                            <div class="w-100">
+                                                <h5 class="m-0 font-14">Jacob Deo</h5>
+                                                <span class="font-12 mb-0">Developer</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end Topbar -->
+                    
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box">
+                                    <div class="page-title-right">
+                                        <form class="d-flex">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control form-control-light" id="dash-daterange">
+                                                <span class="input-group-text bg-primary border-primary text-white">
+                                                    <i class="mdi mdi-calendar-range font-13"></i>
+                                                </span>
+                                            </div>
+                                            <a href="javascript: void(0);" class="btn btn-primary ms-2">
+                                                <i class="mdi mdi-autorenew"></i>
+                                            </a>
+                                            <a href="javascript: void(0);" class="btn btn-primary ms-1">
+                                                <i class="mdi mdi-filter-variant"></i>
+                                            </a>
+                                        </form>
+                                    </div>
+                                    <h4 class="page-title">Painel Controle</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end page title -->
+
+                        <div class="row">
+                            <div class="col-xl-5 col-lg-6">
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="card widget-flat">
+                                            <div class="card-body">
+                                                <div class="float-end">
+                                                    <i class="mdi mdi-account-multiple widget-icon"></i>
+                                                </div>
+                                                <h5 class="text-muted fw-normal mt-0" title="Number of Customers">Clientes</h5>
+                                                <?php $num = mysqli_query($con,"SELECT * FROM t0013");
+                                                      $num_clientes = mysqli_num_rows($num);  ?>
+                                                <h3 class="mt-3 mb-3"><? print $num_clientes; ?></h3>
+                                                <p class="mb-0 text-muted">
+                                                    <span class="text-success me-2"><i class="mdi mdi-arrow-up-bold"></i> 5.27%</span>
+                                                    <span class="text-nowrap">Desde o último mês</span>  
+                                                </p>
+                                            </div> <!-- end card-body-->
+                                        </div> <!-- end card-->
+                                    </div> <!-- end col-->
+
+                                    <div class="col-sm-6">
+                                        <div class="card widget-flat">
+                                            <div class="card-body">
+                                                <div class="float-end">
+                                                    <i class="mdi mdi-cart-plus widget-icon"></i>
+                                                </div>
+                                                <h5 class="text-muted fw-normal mt-0" title="Number of Orders">Pedidos</h5>
+                                                <h3 class="mt-3 mb-3">0</h3>
+                                                <p class="mb-0 text-muted">
+                                                    <span class="text-danger me-2"><i class="mdi mdi-arrow-down-bold"></i> 1.08%</span>
+                                                    <span class="text-nowrap">Desde o Último mês</span>
+                                                </p>
+                                            </div> <!-- end card-body-->
+                                        </div> <!-- end card-->
+                                    </div> <!-- end col-->
+                                </div> <!-- end row -->
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="card widget-flat">
+                                            <div class="card-body">
+                                                <div class="float-end">
+                                                    <i class="mdi mdi-currency-usd widget-icon"></i>
+                                                </div>
+                                                <h5 class="text-muted fw-normal mt-0" title="Average Revenue">Receita</h5>
+                                                <h3 class="mt-3 mb-3">$0,00</h3>
+                                                <p class="mb-0 text-muted">
+                                                    <span class="text-danger me-2"><i class="mdi mdi-arrow-down-bold"></i> 7.00%</span>
+                                                    <span class="text-nowrap">Desde o Último mês</span>
+                                                </p>
+                                            </div> <!-- end card-body-->
+                                        </div> <!-- end card-->
+                                    </div> <!-- end col-->
+
+                                    <div class="col-sm-6">
+                                        <div class="card widget-flat">
+                                            <div class="card-body">
+                                                <div class="float-end">
+                                                    <i class="mdi mdi-pulse widget-icon"></i>
+                                                </div>
+                                                <h5 class="text-muted fw-normal mt-0" title="Growth">Crescimento</h5>
+                                                <h3 class="mt-3 mb-3">+ 0.00%</h3>
+                                                <p class="mb-0 text-muted">
+                                                    <span class="text-success me-2"><i class="mdi mdi-arrow-up-bold"></i> 4.87%</span>
+                                                    <span class="text-nowrap">Desde o Último mês</span>
+                                                </p>
+                                            </div> <!-- end card-body-->
+                                        </div> <!-- end card-->
+                                    </div> <!-- end col-->
+                                </div> <!-- end row -->
+
+                            </div> <!-- end col -->
+
+                            <div class="col-xl-7 col-lg-6">
+                                <div class="card card-h-100">
+                                    <div class="card-body">
+                                        <div class="dropdown float-end">
+                                            <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="mdi mdi-dots-vertical"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-end">
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Relatório Vendas</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Relatório Export</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Lucro</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Ação</a>
+                                            </div>
+                                        </div>
+                                        <h4 class="header-title mb-3">Projeção Vs Atual</h4>
+
+                                        <div dir="ltr">
+                                            <div id="high-performing-product" class="apex-charts" data-colors="#727cf5,#e3eaef"></div>
+                                        </div>
+                                            
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+
+                            </div> <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="dropdown float-end">
+                                            <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="mdi mdi-dots-vertical"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-end">
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Relatório Vendas</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Relatório Export</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Lucro</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Ação</a>
+                                            </div>
+                                        </div>
+                                        <h4 class="header-title mb-3">Receita</h4>
+
+                                        <div class="chart-content-bg">
+                                            <div class="row text-center">
+                                                <div class="col-sm-6">
+                                                    <p class="text-muted mb-0 mt-3">Semana Atual</p>
+                                                    <h2 class="fw-normal mb-3">
+                                                        <small class="mdi mdi-checkbox-blank-circle text-primary align-middle me-1"></small>
+                                                        <span>R$ 00,00</span>
+                                                    </h2>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p class="text-muted mb-0 mt-3">Semana Anterior</p>
+                                                    <h2 class="fw-normal mb-3">
+                                                        <small class="mdi mdi-checkbox-blank-circle text-success align-middle me-1"></small>
+                                                        <span>R$ 00,00</span>
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="dash-item-overlay d-none d-md-block" dir="ltr">
+                                            <h5>Movimento Hoje: R$0,00</h5>
+                                            <p class="text-muted font-13 mb-3 mt-2">Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
+                                                Etiam rhoncus...</p>
+                                            <a href="javascript: void(0);" class="btn btn-outline-primary">Ver Declaração
+                                                <i class="mdi mdi-arrow-right ms-2"></i>
+                                            </a>
+                                        </div>
+                                        <div dir="ltr">
+                                            <div id="revenue-chart" class="apex-charts mt-3" data-colors="#727cf5,#0acf97"></div>
+                                        </div>
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+                            </div> <!-- end col-->
+
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="dropdown float-end">
+                                            <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="mdi mdi-dots-vertical"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-end">
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Relatório Vendas</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Relatório</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Lucro</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Ação</a>
+                                            </div>
+                                        </div>
+                                        <h4 class="header-title">Receita por Trabalhos</h4>
+                                        <div class="mb-4 mt-4">
+                                            <div id="world-map-markers" style="height: 224px"></div>
+                                        </div>
+
+                                        <h5 class="mb-1 mt-0 fw-normal">Indaiatuba</h5>
+                                        <div class="progress-w-percent">
+                                            <span class="progress-value fw-bold">72k </span>
+                                            <div class="progress progress-sm">
+                                                <div class="progress-bar" role="progressbar" style="width: 72%;" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+
+                                        <h5 class="mb-1 mt-0 fw-normal">Campinas</h5>
+                                        <div class="progress-w-percent">
+                                            <span class="progress-value fw-bold">39k </span>
+                                            <div class="progress progress-sm">
+                                                <div class="progress-bar" role="progressbar" style="width: 39%;" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+
+                                        <h5 class="mb-1 mt-0 fw-normal">Salto</h5>
+                                        <div class="progress-w-percent">
+                                            <span class="progress-value fw-bold">25k </span>
+                                            <div class="progress progress-sm">
+                                                <div class="progress-bar" role="progressbar" style="width: 39%;" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+
+                                        <h5 class="mb-1 mt-0 fw-normal">Itu</h5>
+                                        <div class="progress-w-percent mb-0">
+                                            <span class="progress-value fw-bold">61k </span>
+                                            <div class="progress progress-sm">
+                                                <div class="progress-bar" role="progressbar" style="width: 61%;" aria-valuenow="61" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+                            </div> <!-- end col-->
+                        </div>
+                        <!-- end row -->
+
+
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-12 order-lg-2 order-xl-1">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <a href="#" class="btn btn-sm btn-link float-end">Export
+                                            <i class="mdi mdi-download ms-1"></i>
+                                        </a>
+                                        <h4 class="header-title mt-2 mb-3">Produto mais Vendidos</h4>
+
+                                        <div class="table-responsive">
+                                            <table class="table table-centered table-nowrap table-hover mb-0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">ASOS Ridley High Waist</h5>
+                                                            <span class="text-muted font-13">07 April 2018</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">$79.49</h5>
+                                                            <span class="text-muted font-13">Preço</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">82</h5>
+                                                            <span class="text-muted font-13">Quantidade</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">$6,518.18</h5>
+                                                            <span class="text-muted font-13">Total</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">Marco Lightweight Shirt</h5>
+                                                            <span class="text-muted font-13">25 March 2018</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">$128.50</h5>
+                                                            <span class="text-muted font-13">Preço</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">37</h5>
+                                                            <span class="text-muted font-13">Quantidade</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">$4,754.50</h5>
+                                                            <span class="text-muted font-13">Total</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">Half Sleeve Shirt</h5>
+                                                            <span class="text-muted font-13">17 March 2018</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">$39.99</h5>
+                                                            <span class="text-muted font-13">Preço</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">64</h5>
+                                                            <span class="text-muted font-13">Quantidade</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">$2,559.36</h5>
+                                                            <span class="text-muted font-13">Total</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">Lightweight Jacket</h5>
+                                                            <span class="text-muted font-13">12 March 2018</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">$20.00</h5>
+                                                            <span class="text-muted font-13">Preço</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">184</h5>
+                                                            <span class="text-muted font-13">Quantidade</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">$3,680.00</h5>
+                                                            <span class="text-muted font-13">Total</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">Marco Shoes</h5>
+                                                            <span class="text-muted font-13">05 March 2018</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">$28.49</h5>
+                                                            <span class="text-muted font-13">Preço</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">69</h5>
+                                                            <span class="text-muted font-13">Quantidade</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">$1,965.81</h5>
+                                                            <span class="text-muted font-13">Total</span>
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div> <!-- end table-responsive-->
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+                            </div> <!-- end col-->
+
+                            <div class="col-xl-3 col-lg-6 order-lg-1">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="dropdown float-end">
+                                            <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="mdi mdi-dots-vertical"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-end">
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Relatório Venda</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Relatório</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Lucro</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Ação</a>
+                                            </div>
+                                        </div>
+                                        <h4 class="header-title">Total de Vendas</h4>
+
+                                        <div id="average-sales" class="apex-charts mb-4 mt-4"
+                                            data-colors="#727cf5,#0acf97,#fa5c7c,#ffbc00"></div>
+                                       
+
+                                        <div class="chart-widget-list">
+                                            <p>
+                                                <i class="mdi mdi-square text-primary"></i> Matriz
+                                                <span class="float-end">$300.56</span>
+                                            </p>
+                                            <p>
+                                                <i class="mdi mdi-square text-danger"></i> Filial
+                                                <span class="float-end">$135.18</span>
+                                            </p>
+                                            <p>
+                                                <i class="mdi mdi-square text-success"></i> Avalista
+                                                <span class="float-end">$48.96</span>
+                                            </p>
+                                            <p class="mb-0">
+                                                <i class="mdi mdi-square text-warning"></i> E-mail
+                                                <span class="float-end">$154.02</span>
+                                            </p>
+                                        </div>
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+                            </div> <!-- end col-->
+
+                            <div class="col-xl-3 col-lg-6 order-lg-1">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="dropdown float-end">
+                                            <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="mdi mdi-dots-vertical"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-end">
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Relatório Vendas</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Relatórios</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Lucro</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Ação</a>
+                                            </div>
+                                        </div>
+                                        <h4 class="header-title mb-2">Atividade Recente</h4>
+
+                                        <div data-simplebar style="max-height: 419px;"> 
+                                            <div class="timeline-alt pb-0">
+                                                <div class="timeline-item">
+                                                    <i class="mdi mdi-upload bg-info-lighten text-info timeline-icon"></i>
+                                                    <div class="timeline-item-info">
+                                                        <a href="#" class="text-info fw-bold mb-1 d-block">You sold an item</a>
+                                                        <small>Paul Burgess just purchased “Hyper - Admin Dashboard”!</small>
+                                                        <p class="mb-0 pb-2">
+                                                            <small class="text-muted">5 minutes ago</small>
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="timeline-item">
+                                                    <i class="mdi mdi-airplane bg-primary-lighten text-primary timeline-icon"></i>
+                                                    <div class="timeline-item-info">
+                                                        <a href="#" class="text-primary fw-bold mb-1 d-block">Product on the Bootstrap Market</a>
+                                                        <small>Dave Gamache added
+                                                            <span class="fw-bold">Admin Dashboard</span>
+                                                        </small>
+                                                        <p class="mb-0 pb-2">
+                                                            <small class="text-muted">30 minutes ago</small>
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="timeline-item">
+                                                    <i class="mdi mdi-microphone bg-info-lighten text-info timeline-icon"></i>
+                                                    <div class="timeline-item-info">
+                                                        <a href="#" class="text-info fw-bold mb-1 d-block">Robert Delaney</a>
+                                                        <small>Te mandou mensagem
+                                                            <span class="fw-bold">"Você está aí?"</span>
+                                                        </small>
+                                                        <p class="mb-0 pb-2">
+                                                            <small class="text-muted">2 hours ago</small>
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="timeline-item">
+                                                    <i class="mdi mdi-upload bg-primary-lighten text-primary timeline-icon"></i>
+                                                    <div class="timeline-item-info">
+                                                        <a href="#" class="text-primary fw-bold mb-1 d-block">Audrey Tobey</a>
+                                                        <small>Foto Carregada
+                                                            <span class="fw-bold">"Erro.jpg"</span>
+                                                        </small>
+                                                        <p class="mb-0 pb-2">
+                                                            <small class="text-muted">14 hours ago</small>
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="timeline-item">
+                                                    <i class="mdi mdi-upload bg-info-lighten text-info timeline-icon"></i>
+                                                    <div class="timeline-item-info">
+                                                        <a href="#" class="text-info fw-bold mb-1 d-block">Você vendeu um item</a>
+                                                        <small>Paul Burgess just purchased “Hyper - Admin Dashboard”!</small>
+                                                        <p class="mb-0 pb-2">
+                                                            <small class="text-muted">16 hours ago</small>
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="timeline-item">
+                                                    <i class="mdi mdi-airplane bg-primary-lighten text-primary timeline-icon"></i>
+                                                    <div class="timeline-item-info">
+                                                        <a href="#" class="text-primary fw-bold mb-1 d-block">Product on the Bootstrap Market</a>
+                                                        <small>Dave Gamache added
+                                                            <span class="fw-bold">Admin Dashboard</span>
+                                                        </small>
+                                                        <p class="mb-0 pb-2">
+                                                            <small class="text-muted">22 hours ago</small>
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="timeline-item">
+                                                    <i class="mdi mdi-microphone bg-info-lighten text-info timeline-icon"></i>
+                                                    <div class="timeline-item-info">
+                                                        <a href="#" class="text-info fw-bold mb-1 d-block">Robert Delaney</a>
+                                                        <small>Te mandou uma mensagem
+                                                            <span class="fw-bold">"Você está aí?"</span>
+                                                        </small>
+                                                        <p class="mb-0 pb-2">
+                                                            <small class="text-muted">2 days ago</small>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end timeline -->
+                                        </div> <!-- end slimscroll -->
+                                    </div>
+                                    <!-- end card-body -->
+                                </div>
+                                <!-- end card-->
+                            </div>
+                            <!-- end col -->
+
+                        </div>
+                        <!-- end row -->
+
+                    </div>
+                    <!-- container -->
+
+                </div>
+                <!-- content -->
+
+                <!-- Footer Start -->
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <script>document.write(new Date().getFullYear())</script> © Indafire - Equipamentos de Combate a Incendios
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-md-end footer-links d-none d-md-block">
+                                    <a href="javascript: void(0);">Sobre</a>
+                                    <a href="javascript: void(0);">Suporte</a>
+                                    <a href="javascript: void(0);">Contato</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- end Footer -->
+
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+
+        </div>
+        <!-- END wrapper -->
+
+        <!-- Right Sidebar -->
+        <div class="end-bar">
+
+            <div class="rightbar-title">
+                <a href="javascript:void(0);" class="end-bar-toggle float-end">
+                    <i class="dripicons-cross noti-icon"></i>
+                </a>
+                <h5 class="m-0">Configurações</h5>
+            </div>
+
+            <div class="rightbar-content h-100" data-simplebar>
+
+                <div class="p-3">
+                    <div class="alert alert-warning" role="alert">
+                        <strong>Personalize </strong> the overall color scheme, sidebar menu, etc.
+                    </div>
+
+                    <!-- Settings -->
+                    <h5 class="mt-3">Coleção Cores</h5>
+                    <hr class="mt-1" />
+
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="color-scheme-mode" value="light" id="light-mode-check" checked>
+                        <label class="form-check-label" for="light-mode-check">Modo Claro</label>
+                    </div>
+
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="color-scheme-mode" value="dark" id="dark-mode-check">
+                        <label class="form-check-label" for="dark-mode-check">Modo Escuro</label>
+                    </div>
+       
+
+                    <!-- Width -->
+                    <h5 class="mt-4">Width</h5>
+                    <hr class="mt-1" />
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="width" value="fluid" id="fluid-check" checked>
+                        <label class="form-check-label" for="fluid-check">Fluido</label>
+                    </div>
+
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="width" value="boxed" id="boxed-check">
+                        <label class="form-check-label" for="boxed-check">Caixa</label>
+                    </div>
+        
+
+                    <!-- Left Sidebar-->
+                    <h5 class="mt-4">Left Sidebar</h5>
+                    <hr class="mt-1" />
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="theme" value="default" id="default-check">
+                        <label class="form-check-label" for="default-check">Padrão</label>
+                    </div>
+
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="theme" value="light" id="light-check" checked>
+                        <label class="form-check-label" for="light-check">Claro</label>
+                    </div>
+
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" name="theme" value="dark" id="dark-check">
+                        <label class="form-check-label" for="dark-check">Escuro</label>
+                    </div>
+
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="compact" value="fixed" id="fixed-check" checked>
+                        <label class="form-check-label" for="fixed-check">Fixo</label>
+                    </div>
+
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="compact" value="condensed" id="condensed-check">
+                        <label class="form-check-label" for="condensed-check">Condensado</label>
+                    </div>
+
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="compact" value="scrollable" id="scrollable-check">
+                        <label class="form-check-label" for="scrollable-check">Rolável</label>
+                    </div>
+
+                    <div class="d-grid mt-4">
+                        <button class="btn btn-primary" id="resetBtn">Reiniciar Padrão</button>
+            
+                        <a href="https://themes.getbootstrap.com/product/hyper-responsive-admin-dashboard-template/"
+                            class="btn btn-danger mt-3" target="_blank"><i class="mdi mdi-basket me-1"></i> Comprar Agora</a>
+                    </div>
+                </div> <!-- end padding-->
+
+            </div>
+        </div>
+
+        <div class="rightbar-overlay"></div>
+        <!-- /End-bar -->
+
+        <!-- bundle -->
+        <script src="assets/js/vendor.min.js"></script>
+        <script src="assets/js/app.min.js"></script>
+
+        <!-- third party js -->
+        <script src="assets/js/vendor/apexcharts.min.js"></script>
+        <script src="assets/js/vendor/jquery-jvectormap-1.2.2.min.js"></script>
+        <script src="assets/js/vendor/jquery-jvectormap-world-mill-en.js"></script>
+        <!-- third party js ends -->
+
+        <!-- demo app -->
+        <script src="assets/js/pages/demo.dashboard.js"></script>
+        <!-- end demo js-->
+
+        <!-- script para funções de arquivo-->
+        <script src="assets/js/script.js"></script>
+        <!-- final de script js-->
+    </body>
+
+<!-- Mirrored from coderthemes.com/hyper_2/saas/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Dec 2021 14:41:29 GMT -->
+</html>
